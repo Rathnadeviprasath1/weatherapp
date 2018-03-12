@@ -9,7 +9,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   devServer: {
-    contentBase: 'src/public',
+    contentBase: 'src/',
     historyApiFallback: true,
     port: 8000,
     host: '0.0.0.0',
