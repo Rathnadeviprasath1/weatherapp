@@ -44,6 +44,7 @@ docker-compose up
 
 weatherapp_backend_1 and weatherapp_frontend_1 containers starts up.
 The frontend runs on localhost:8000 and backend runs on localhost:9000 on the host machine.
+The user can view the forecast of Helsinki on the browser by navigating to localhost:8000 
  
 The volume is mounted from host to frontend and backend dockers and by default they enable hot reload.
 
