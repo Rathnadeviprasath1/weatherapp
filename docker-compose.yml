@@ -1,14 +1,21 @@
 version: '3'
 services:
-  web:
+  frontend:
     build: ~/efc_test/weatherapp/frontend/
     command: npm start    
     ports:
       - "8000:8000"
+    volumes:
+      - frontend: /usr/src/app
     depends_on:
-      - nodejs
-  nodejs:
+      - backend
+  backend:
     build: ~/efc_test/weatherapp/backend/
     command: npm start
+    volumes:
+      - backend: /usr/src/app
     ports:
       - "9000:9000"
+volumes:
+    frontend:
+    backend:
